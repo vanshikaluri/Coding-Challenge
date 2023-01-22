@@ -1,6 +1,5 @@
 # Coding-Challenge
-This program uses the King James version of the bible to create a Google Ngram-like application to see the frequency of certain words throughout the book.
-To start, the user will enter the verses, chapters, and books that they want to use to find a word. For the books, please enter them fully and correctly. 
-After the program finishes running, it will print the amount of times the word that you typed in showed up in the particular range you specified. Next, the program
+This program uses the King James version of the Bible to create a Google Ngram-like application to see the frequency of certain words throughout a section the user specifies. For example, if you want to find the amount of times the word water shows up in between Genesis 1:2 and Exodus 3:5, this program can do that.
+To start, the user will enter the verses, chapters, and books that they want to use to find a word. For the books, please enter them fully and correctly. For example, you can enter Genesis, then 1 for chapter 1 and 1 for verse 1. Same follows for the second set of choices as well. After the program finishes running, it will print the amount of times the word that you typed in showed up in the particular range you specified. Next, the program
 will randomly find a word within the Bible and then see if it is an unevenly distributed word. I utilized random number generators to generate the line and word within
-the line, and I determined if a word was unevenly distributed if it varied by 1/5 or 5 times the original frequency per 5000 words. Then, the program will display two graphs, one being the frequency of the evenly distributed word, and the other being the frequency of the unevenly distributed word. 
+the line, and I determined if the word was unevenly distributed if it varied by 1/5 or 5 times the original frequency per 5000 words. This might take a few seconds, but if it takes too long rerun the program. 
