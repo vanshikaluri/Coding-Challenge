@@ -26,7 +26,7 @@ def evaluateFrequency(word, book1, chapter1, verse1, book2, chapter2, verse2):
     for m in range(newline1, newline2):
         if word in file1[m]:
             count+=1
-    return "The word "+word+" has a frequency of "+str(count/1000)+" per 1000 words"
+    return "The word appeared "+str(count)+" times in this section."
 
 def main():
     file1 = open("bible.txt", "r")
@@ -39,7 +39,7 @@ def main():
     book2 = input("Enter the second book: ")
     chapter2 = input("Enter the second chapter: ")
     verse2 = input("Enter the second verse: ")
-    word = input("What word would you like to search for?")
+    word = input("What word would you like to search for? ")
     print(evaluateFrequency(word, book1, chapter1, verse1, book2, chapter2, verse2))
     wordcount = 0
     freqcount = 0
@@ -106,7 +106,7 @@ def main():
     even.append(word3)
     if not word3[len(word3)-1].isalpha():
         word3 = word3[0:len(word3)-1]
-    print(word3+ "is a word that is evenly distributed")
+    print(word3+ " is a word that is evenly distributed")
     word2 = uneven[0]            
     if not word2[len(word2)-1].isalpha():
         word2 = word2[0:len(word2)-1]
@@ -124,8 +124,8 @@ def main():
             y1list.append(evencount)
             x1list.append(wordcount+5000)
             wordcount=0
-    plt.plot(x1list, y1list)
-    plt.show()
+    ##plt.plot(x1list, y1list)
+    ##plt.show()
     evencount = 0
     unevencount = 0
     wordcount = 0
@@ -139,8 +139,8 @@ def main():
             y1list.append(unevencount)
             x1list.append(wordcount+5000)
             wordcount=0
-    plt.plot(x1list, y1list)
-    plt.show()
+    ##plt.plot(x1list, y1list)
+    ##plt.show()
         
     
 main()
